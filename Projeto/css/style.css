@@ -1,18 +1,4 @@
-/*
-* Template Name: Medio
-* Template Author: Untree.co
-* Template License: https://creativecommons.org/licenses/by/3.0/
-* Author URI: https://untree.co/
 
-* Twitter: https://twitter.com/Untree_co
-* Facebook: https://web.facebook.com/Untree.co/
-*/
-/*!
- * Bootstrap v5.1.3 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 :root {
   --bs-colorbg:#FFCB08;
   --bs-colorsg:#FF4406;
@@ -69,11 +55,6 @@
   --bs-body-bg: #fff; 
   --header-bg: rgba(255,255,255,.4);
 }
-
-  
- 
-
-
 
 *,
 *::before,
@@ -142,6 +123,11 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem; }
+
+.logo {
+  height: 90px;
+  user-select: none;
+}
 
 p {
   margin-top: 0;
@@ -10243,10 +10229,10 @@ textarea {
     color: #fff; }
 
 .site-footer {
-  background: #306ee8;
-  background: -webkit-linear-gradient(310deg, #306ee8 0%, #3038e8 100%);
-  background: -o-linear-gradient(310deg, #306ee8 0%, #3038e8 100%);
-  background: linear-gradient(140deg, #306ee8 0%, #3038e8 100%);
+  background: #FFCB08;
+  background: -webkit-linear-gradient(310deg, #FFCB08 0%, #FFCB08 100%);
+  background: -o-linear-gradient(310deg, #FFCB08 0%, #FFCB08 100%);
+  background: linear-gradient(140deg, #FFCB08 0%, #FFCB08 100%);
   font-size: 14px;
   padding: 70px 0;
   color: white; }
