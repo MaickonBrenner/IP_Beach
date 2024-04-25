@@ -10,9 +10,6 @@
     font-family: "Mukta", sans-serif;
     font-weight: 600;
     font-style: normal;
-    
-   
-
 }
 
 :root {
@@ -42,6 +39,12 @@ header{
     width: 200px;
     
 }
+
+.logo {
+    height: 90px;
+    user-select: none;
+  } 
+  
 footer{
     background-color: var(--primary-color);
     color: #000000;
