@@ -9232,8 +9232,9 @@ textarea.form-control-lg {
   .logo:hover {
     color: #fff; }
 
-.site-nav {
+.site-nav { /* Navbar*/
   position: absolute;
+  background-color: rgba(0, 0, 0, 0.22);
   top: 40px;
   z-index: 9;
   width: 100%; }
