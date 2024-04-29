@@ -3370,7 +3370,8 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none; }
+  list-style: none;
+ }
 
 .nav-link {
   display: block;

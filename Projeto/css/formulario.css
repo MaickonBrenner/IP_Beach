@@ -37,7 +37,7 @@ header{
     border: solid 2pxr  var(--primary-color);
     border-radius: 10px;
     width: 200px;
-    
+    cursor: pointer;
 }
 
 .logo {
