@@ -133,6 +133,15 @@ p {
   margin-top: 0;
   margin-bottom: 1rem; }
 
+.localizacao {
+  background-image: url('..Projeto/images/volei-1.jpeg');
+}
+
+.titulos {
+  font-size: 18px;
+  color: white;
+}
+
 abbr[title],
 abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;
