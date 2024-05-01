@@ -9235,7 +9235,7 @@ textarea.form-control-lg {
 .site-nav { /* Navbar*/
   position: absolute;
   background-color: rgba(0, 0, 0, 0.22);
-  top: 40px;
+  top: 0px;
   z-index: 9;
   width: 100%; }
 
@@ -9780,7 +9780,8 @@ textarea {
         padding-top: 4rem;
         padding-bottom: 4rem; } }
   .hero.overlay {
-    position: relative; }
+    position: relative; 
+  }
     .hero.overlay:before {
       display: none;
       background-color: rgba(0, 0, 0, 0.4);
@@ -10294,3 +10295,11 @@ textarea {
       .site-footer .social li a:hover {
         background: #fff;
         color: #306EE8; }
+
+
+        @media (max-width: 900px) {
+          .map {
+            width: 100%;
+            height: 400px;
+          }
+        }
