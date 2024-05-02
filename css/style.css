@@ -4022,10 +4022,14 @@ textarea.form-control-lg {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding: 1rem 1rem; }
+  padding: 1rem 1rem; 
+  background-color: var(--bs-colorbg);
+  border-radius: 0 0 10px 10px;
+}
 
 .card-title {
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem; 
+}
 
 .card-subtitle {
   margin-top: -0.25rem;
@@ -9233,7 +9237,7 @@ textarea.form-control-lg {
     color: #fff; }
 
 .site-nav { /* Navbar*/
-  position: absolute;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.22);
   top: 0px;
   z-index: 9;
@@ -9760,9 +9764,9 @@ textarea {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 900px; }
-  .hero .img-wrap img {
+  /* .hero .img-wrap img {
     -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1); }
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1); } */
   .hero, .hero > .container > .row {
     height: 100vh;
     min-height: 680px; }
@@ -10296,6 +10300,23 @@ textarea {
         background: #fff;
         color: #306EE8; }
 
+      #localizacao p {
+        color: #fff;
+      }
+      #localizacao h3,
+      #localizacao h2 {
+        color: #fff;
+        font-weight: bold;
+      }
+      .bi-wallet-fill.me-4,
+      .bi-pie-chart-fill.me-4 {
+        color: var(--bs-colorbg);
+      }
+
+      .mb-4.aos-init.aos-animate {
+        color: var(--bs-body-color);
+      }
+      
 
         @media (max-width: 900px) {
           .map {
