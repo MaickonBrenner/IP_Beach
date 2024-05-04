@@ -4,28 +4,42 @@
     margin: 0;
     padding: 0;
     border: 0;
-    background-color: #cecece;
+    /* background-color: #cecece; */
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
     font-family: "Mukta", sans-serif;
     font-weight: 600;
     font-style: normal;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 :root {
     --primary-color: #ff4406;
     --second-color: #FFCB08;
 }
+
+body {
+    align-items: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background: url('../images/quadra-2.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
 section {
     background-color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     gap: 30px;
-    width: 70%; 
     max-width: 600px; 
-    margin: 50px auto; 
+    margin: 20% auto;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -39,7 +53,7 @@ h2 {
     color: var(--primary-color)
 }
 
-.botao{
+.botao {
     color: white;
     background-color: var(--primary-color);
     padding: 10px;
@@ -55,27 +69,21 @@ h2 {
     user-select: none;
     background-color: white;
   } 
-  
-footer{
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-}
-select{
-    color: #000000;
-    padding: 5px;
-    font-size: 15px;
-    border: solid 2px  var(--primary-color);
-    border-radius: 10px;
+
+  @media screen and (max-width: 900px) {
+    section {
+        margin: 50% 20% 20%;
+    }
 }
 
-input, textarea{
-    border: solid 2px var(--primary-color);
-    border-radius: 10px;
-    height: 30px;
+@media screen and (max-width: 600px) {
+    section {
+        margin: 70% 20%;
+    }
+}
 
+@media screen and (max-width: 400px) {
+    section {
+        margin: 80% 20%;
+    }
 }
