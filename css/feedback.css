@@ -54,14 +54,21 @@ h2 {
 }
 
 .botao {
-    color: white;
+    color: black;
     background-color: var(--primary-color);
     padding: 10px;
     font-size: 20px;
-    border: solid 2pxr  var(--primary-color);
+    border: solid 2px var(--primary-color);
     border-radius: 10px;
     width: 200px;
     cursor: pointer;
+}
+
+.botao:hover {
+    background-color: white;
+    border: solid 2px var(--primary-color);
+    color: var(--primary-color);
+    transition: 0.3s;
 }
 
 .logo {
