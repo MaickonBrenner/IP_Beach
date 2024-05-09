@@ -10324,3 +10324,16 @@ textarea {
             height: 400px;
           }
         }
+
+        .whats-logo {
+          width: 40px;
+        }
+        .float-logos {
+          position: fixed;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          bottom: 5%;
+          right: 5%;
+          z-index: 999;
+        }
