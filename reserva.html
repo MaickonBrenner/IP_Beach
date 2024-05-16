@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Beach Sports</title>
+    <link rel="stylesheet" href="css/reserva.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+</head>
+<body>
+    <main>
+        <div class="logo">
+            <img src="images/logo_branca.png" alt="logo">
+        </div>
+        <div class="title">
+            <h1>Formulário de reserva</h1>
+        </div>
+        <div class="container">
+            <div class="area">
+                <div class="info">
+                   
+                    <div class="info-texto">
+                        <p>Selecione uma data</p>
+                    </div>
+                    <div class="info-data">
+                        <input type="date" name="data">
+                    </div>
+                   
+                    <div class="info-texto">
+                        <p>Selecione um horário</p>
+                    </div>
+                    <div class="info-horario">
+                        <div class="periodo">
+                            <p>Manhã</p>
+                        </div>
+                        <form>
+                            <button type="button" class="horario-btn">06:00</button>
+                            <button type="button" class="horario-btn">07:00</button>
+                            <button type="button" class="horario-btn">08:00</button>
+                            <button type="button" class="horario-btn">09:00</button>
+                            <button type="button" class="horario-btn">10:00</button>
+                            <button type="button" class="horario-btn">11:00</button>  
+                        </form>
+                        <div class="periodo">
+                            <p>Tarde</p>
+                        </div>
+                        <form>
+                            <button type="button" class="horario-btn">13:00</button>
+                            <button type="button" class="horario-btn">14:00</button>
+                            <button type="button" class="horario-btn">15:00</button>
+                            <button type="button" class="horario-btn">16:00</button>
+                            <button type="button" class="horario-btn">17:00</button>
+                    </div>
+                    <div class="periodo">
+                        <p>Noite</p>
+                    </div>
+                    <form>
+                        <button type="button" class="horario-btn">18:00</button>
+                        <button type="button" class="horario-btn">19:00</button>
+                        <button type="button" class="horario-btn">20:00</button>
+                        <button type="button" class="horario-btn">21:00</button>
+                        <button type="button" class="horario-btn">22:00</button>
+                </div>
+            </div>
+
+            <div class="area">
+                <div class="form">
+                    <div class="info-texto">
+                        <p>Preencha as informações</p>
+                    </div>
+                    <div class="formulario">
+                            <form>
+                                <label for="fnome"> Nome:</label>
+                                <br>
+                                <input type="text" name="tipo_nome" size="60" required>
+                                <br><br>
+                                <label for="femail"> E-mail:</label>
+                                <br>
+                                <input type="text" name="tipo_email" size="60" required>
+                                <br><br>
+                                <label for="ftelefone"> Telefone:</label>
+                                <br>
+                                <input type="text" name="tipo_telefone" size="60" required>
+                                <br>
+                                <div class="form-group">
+                                    <label for="modalidade">Modalidade:</label>
+                                    <select id="modalidade" name="modalidade">
+                                        <option value="" disabled selected>Selecione uma modalidade</option>
+                                        <option value="beach-tenis">Beach Tênis</option>
+                                        <option value="volei">Vôlei</option>
+                                    </select>
+                                </div>
+                                <div class="botao">
+                                    <button type="submit">Confirmar</button>
+                                </div>
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

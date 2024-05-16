@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--primary-color);
+}
+
+:root {
+    --primary-color: #FF4406;
+    --secondary-color: #FFCB08;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.area {
+    flex: 1;
+}
+
+.info {
+    background-color: white;
+    margin: 60px 120px;
+    border-radius: 10px;
+    padding: 10px;
+    height: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-texto {
+    text-align: center;
+}
+
+.info-texto p {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.info-data {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+input[type="date"] {
+    padding: 8px 32px 8px 8px;
+    border: 2px solid #ccc; 
+    border-radius: 6px; 
+    font-size: 18px;
+    outline: none;
+    width: 300px;
+    filter: brightness(0.9);
+}
+
+input[type="date"]:focus {
+    border-color: var(--primary-color); 
+
+}
+
+input[type="date"]:focus {
+    filter: brightness(1);
+}
+
+
+.periodo {
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+.horario-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.horario-btn:hover {
+    background-color: #ffa600b2;
+}
+
+.form {
+    background-color: white;
+    margin: 60px 120px;
+    border-radius: 10px;
+    padding: 10px;
+    height: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    filter: brightness(0.9);
+    font-size: 16px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    filter: brightness(1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+select {
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    filter: brightness(0.9);
+    font-size: 16px;
+}
+
+.botao {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 80px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+button:hover {
+    background-color: #FFCB08b2;
+}
