@@ -95,6 +95,7 @@ input[type="date"]:focus {
     color: #fff;
     cursor: pointer;
     border-radius: 6px;
+    transition: 1s;
 }
 
 .horario-btn:hover {
