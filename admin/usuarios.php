@@ -131,12 +131,13 @@
 
                                 if ($result->num_rows > 0) {
                                     while($row = $result->fetch_assoc()) {
+                                        $id_cel = $row['IDUSUARIO'];
                                         echo "<tr>
                                                 <td>".$row['IDUSUARIO']."</td>
                                                 <td>".$row['NOME']."</td>
                                                 <td>".$row['SENHA']."</td>
                                                 <td>".$row['DATADECRIACAO']."</td>
-                                                <td><button class='btn'><i class='fa fa-trash'></i></button></i> <button class='btn'><i class='fa fa-pencil'></i></button></td>
+                                                <td><form action='confirma_deleta_usuario.php' method='post'><button name='id' value='$id_cel' class='btn'><i class='fa fa-trash'></i></button></form></i> <form action='edita_usuario.php' method='post'><button name='id' value='$id_cel' class='btn'><i class='fa fa-pencil'></i></button></form></td>
 
                                             </tr>";
                                     }

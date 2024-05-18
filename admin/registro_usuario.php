@@ -67,8 +67,10 @@
             <?php 
                 if (isset($_GET['reg']) and $_GET['reg'] == 'error-cred') { echo '<span style="color: var(--error);font-size: 1rem;"> Usuario já existe!</span>'; }       
                 ?></h1>
-        <input name="usuario" class="form-control form-control-sm" type="text" placeholder="Digite o usuário" aria-label=".form-control-sm example" style="margin-bottom: 20px;">
-        <input name="senha" class="form-control form-control-sm" type="text" placeholder="Digite a senha" aria-label=".form-control-sm example" style="margin-bottom: 20px;">
+        <h3>Nome</h3>
+        <input name="usuario" class="form-control form-control-sm" type="text" placeholder="Digite o usuário" aria-label=".form-control-sm example" style="margin-bottom: 20px;" required>
+        <h3>Senha</h3>
+        <input name="senha" class="form-control form-control-sm" type="password" placeholder="Digite a senha" aria-label=".form-control-sm example" style="margin-bottom: 20px;" required>
         <button class="btn btn-primary">Criar usuario</button>
     </form>
 

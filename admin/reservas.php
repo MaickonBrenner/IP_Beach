@@ -150,6 +150,7 @@
                                         <th scope='col'>Telefone</th>
                                         <th scope='col'>Data do agendamento</th>
                                         <th scope='col'>Data agendada</th>
+                                        <th scope='col'>Hora</th>
                                         <th scope='col'>Ações</th>
                                     </tr>
                                 </thead>
@@ -160,15 +161,16 @@
 
                                 if ($result->num_rows > 0) {
                                     while($row = $result->fetch_assoc()) {
+                                        $id_cel = $row['IDRESERVA'];
                                         echo "<tr>
                                                 <td>".$row['IDRESERVA']."</td>
                                                 <td>".$row['NOME']."</td>
                                                 <td>".$row['EMAIL']."</td>
                                                 <td>".$row['TELEFONE']."</td>
-                                                <td>".$row['DATAADENDAMENTO']."</td>
+                                                <td>".$row['DATAAGENDAMENTO']."</td>
                                                 <td>".$row['DATAAGENDADA']."</td>
                                                 <td>".$row['HORA']."</td>
-                                                <td><button class='btn'><i class='fa fa-trash'></i></button></i> <button class='btn'><i class='fa fa-pencil'></i></button></td>
+                                                <td><form action='confirma_deleta_reserva.php' method='post'><button name='id' value='$id_cel' class='btn'><i class='fa fa-trash'></i></button></form></i> <form action='edita_reserva.php' method='post'><button name='id' value='$id_cel' class='btn'><i class='fa fa-pencil'></i></button></form></td>
 
                                             </tr>";
                                     }
