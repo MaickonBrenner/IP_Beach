@@ -28,18 +28,18 @@
                     <div class="info-texto">
                         <p>Selecione uma data</p>
                     </div>
-                    <div class="info-data">
+                    <div  class="form-inline text-center">
                         <input type="date" name="data">
                     </div>
-                
+                    <br>
                     <div class="info-texto">
                         <p>Selecione um horário</p>
                     </div>
                     <div class="info-horario">
-                        <div class="periodo">
-                            <p>Manhã</p>
+                        <div class="form-inline text-center">
+                            <p style="font-weight: bold;">Manhã</p>
                         </div>
-                        <form>
+                        <form class="form-inline text-center">
                             <button type="button" class="btn btn-warning" style="color: #fff;">06:00</button>
                             <button type="button" class="btn btn-warning" style="color: #fff;">07:00</button>
                             <button type="button" class="btn btn-warning" style="color: #fff;">08:00</button>
@@ -47,25 +47,29 @@
                             <button type="button" class="btn btn-warning" style="color: #fff;">10:00</button>
                             <button type="button" class="btn btn-warning" style="color: #fff;">11:00</button>  
                         </form>
-                        <div class="periodo">
-                            <p>Tarde</p>
+                        <br>
+                        <div class="form-inline text-center">
+                            <p style="font-weight: bold;">Tarde</p>
                         </div>
-                        <form>
+                        <form class="form-inline text-center">
                             <button type="button" class="btn btn-warning" style="color: #fff;">13:00</button>
                             <button type="button" class="btn btn-warning" style="color: #fff;">14:00</button>
                             <button type="button" class="btn btn-warning" style="color: #fff;">15:00</button>
                             <button type="button" class="btn btn-warning" style="color: #fff;">16:00</button>
                             <button type="button" class="btn btn-warning" style="color: #fff;">17:00</button>
+                        </form>
                     </div>
-                    <div class="periodo">
-                        <p>Noite</p>
+                    <br>
+                    <div class="form-inline text-center">
+                        <p style="font-weight: bold;">Noite</p>
                     </div>
-                    <form>
+                    <form class="form-inline text-center">
                         <button type="button" class="btn btn-warning" style="color: #fff;">18:00</button>
                         <button type="button" class="btn btn-warning" style="color: #fff;">19:00</button>
                         <button type="button" class="btn btn-warning" style="color: #fff;">20:00</button>
                         <button type="button" class="btn btn-warning" style="color: #fff;">21:00</button>
                         <button type="button" class="btn btn-warning" style="color: #fff;">22:00</button>
+                    </form>
                 </div>
             </div>
                        
@@ -79,15 +83,15 @@
                                 <form>
                                     <label for="fnome"> Nome:</label>
                                     <br>
-                                    <input type="text" name="tipo_nome" size="60" required>
+                                    <input type="text" name="tipo_nome" size="60" required placeholder="Nome">
                                     <br><br>
                                     <label for="femail"> E-mail:</label>
                                     <br>
-                                    <input type="text" name="tipo_email" size="60" required>
+                                    <input type="text" name="tipo_email" size="60" required placeholder="@gmail.com">
                                     <br><br>
                                     <label for="ftelefone"> Telefone:</label>
                                     <br>
-                                    <input type="text" name="tipo_telefone" size="60" required>
+                                    <input type="text" name="tipo_telefone" size="60" required placeholder="(xx) xxxxx-xxxx">
                                     <br>
                                     <div class="form-group">
                                         <label for="modalidade">Modalidade:</label>
@@ -97,7 +101,7 @@
                                             <option value="volei">Vôlei</option>
                                         </select>
                                     </div>
-                                    <div>
+                                    <div class="form-inline text-center"> 
                                         <button type="submit" class="btn btn-warning" style="color: #fff;">Confirmar</button>
                                     </div>
                                 </form>
