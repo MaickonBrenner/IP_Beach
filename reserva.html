@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,103 +13,146 @@
     <title>Reserva | IP Beach Sports</title>  
 </head>
 <body>
-    <main>
-        <div class="logo">
-            <img src="images/logo_branca.png" alt="logo">
-        </div>
 
-        <div class="title">
-            <h1>Formulário de Reserva</h1>
+    <div class="row">
+        <div class="col-12"  style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+            <img src="images/logo_branca.png" alt="logo" width="100px">
+            <h1 style="color: #fff; font-weight: bold;">Formulário de Reserva</h1>
         </div>
+    </div>
 
-        <div class="row">
-            <div class="col-md-2-xs-2">
-                <div class="info" style="min-width: 300px;">
-                    <div class="info-texto">
-                        <p>Selecione uma data</p>
-                    </div>
-                    <div  class="form-inline text-center">
-                        <input type="date" name="data" style="width: 100%;">
-                    </div>
-                    <br>
+    <div class="row">
+        <div class="col-12" style="display: flex; align-items: center; justify-content: center">
+
+            <div class="card" style="width: 90%; min-width: 300px; max-width: 500px;">
+                <form action="criar_reserva.php" method="post" class="card-body text-center">
+                    <h5 class="card-title"><b>Selecione uma data</b></h5>
+                    
+                    <input name="data" class="form-control" type="date" placeholder="Digite o usuário"  style="width: 100%;" required>
+
                     <div class="info-texto">
                         <p>Selecione um horário</p>
                     </div>
-                    <div class="info-horario">
-                        <div class="form-inline text-center">
+
+                    <div class="info-horario form-inline text-center">
+                        <div class="periodo">
                             <p style="font-weight: bold;">Manhã</p>
-                        </div>
-                        <form class="form-inline text-center">
-                            <button type="button" class="btn btn-warning" style="color: #fff;">06:00</button>
-                            <button type="button" class="btn btn-warning" style="color: #fff;">07:00</button>
-                            <button type="button" class="btn btn-warning" style="color: #fff;">08:00</button>
-                            <button type="button" class="btn btn-warning" style="color: #fff;">09:00</button>
-                            <button type="button" class="btn btn-warning" style="color: #fff;">10:00</button>
-                            <button type="button" class="btn btn-warning" style="color: #fff;">11:00</button>  
-                        </form>
-                        <br>
-                        <div class="form-inline text-center">
-                            <p style="font-weight: bold;">Tarde</p>
-                        </div>
-                        <form class="form-inline text-center">
-                            <button type="button" class="btn btn-warning" style="color: #fff;">13:00</button>
-                            <button type="button" class="btn btn-warning" style="color: #fff;">14:00</button>
-                            <button type="button" class="btn btn-warning" style="color: #fff;">15:00</button>
-                            <button type="utton" class="btn btn-warning" style="color: #fff;">16:00</button>
-                            <button type="button" class="btn btn-warning" style="color: #fff;">17:00</button>
-                        </form>
-                    </div>
-                    <br>
-                    <div class="form-inline text-center">
-                        <p style="font-weight: bold;">Noite</p>
-                    </div>
-                    <form class="form-inline text-center">
-                        <button type="button" class="btn btn-warning" style="color: #fff;">18:00</button>
-                        <button type="button" class="btn btn-warning" style="color: #fff;">19:00</button>
-                        <button type="button" class="btn btn-warning" style="color: #fff;">20:00</button>
-                        <button type="button" class="btn btn-warning" style="color: #fff;">21:00</button>
-                        <button type="button" class="btn btn-warning" style="color: #fff;">22:00</button>
-                    </form>
-                </div>
-            </div>
-                       
-            </div>
-            <div class="col-md-2-xs-2">
-                    <div class="form" style="min-width: 300px;">
-                        <div class="info-texto">
-                            <p>Preencha as informações</p>
-                        </div>
-                        <div class="formulario">
-                                <form>
-                                    <label for="fnome"> Nome:</label>
-                                    <br>
-                                    <input type="text" name="tipo_nome" size="60" required placeholder="Nome">
-                                    <br><br>
-                                    <label for="femail"> E-mail:</label>
-                                    <br>
-                                    <input type="text" name="tipo_email" size="60" required placeholder="@gmail.com">
-                                    <br><br>
-                                    <label for="ftelefone"> Telefone:</label>
-                                    <br>
-                                    <input type="tel" name="tipo_telefone" size="60" required placeholder="(xx) xxxxx-xxxx">
-                                    <br>
-                                    <div class="form-group">
-                                        <label for="modalidade">Modalidade:</label>
-                                        <select id="modalidade" name="modalidade">
-                                            <option value="" disabled selected>Selecione uma modalidade</option>
-                                            <option value="beach-tenis">Beach Tênis</option>
-                                            <option value="volei">Vôlei</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-inline text-center"> 
-                                        <button type="submit" class="btn btn-warning" style="color: #fff;">Confirmar</button>
-                                    </div>
-                                </form>
+                        
+                            <div class="form-inline text-center">
+                                <div class="btn btn-warning">
+                                    <label for="hora">06:00</label>
+                                    <input type="radio" name="hora" id="hora" value="11">
+                                </div>
+                                <div class="btn btn-warning">
+                                    <label for="horaa">07:00</label>
+                                    <input type="radio" name="hora" id="horaa">
+                                </div>
+                                <div class="btn btn-warning">
+                                    <label for="horaaa">08:00</label>
+                                    <input type="radio" name="hora" id="horaaa">
+                                </div>
+                                <div class="btn btn-warning">
+                                    <label for="horaaaa">09:00</label>
+                                    <input type="radio" name="hora" id="horaaaa">
+                                </div>
+                                <div class="btn btn-warning">
+                                    <label for="horaaaaa">10:00</label>
+                                    <input type="radio" name="hora" id="horaaaaa">
+                                </div>
+                                <div class="btn btn-warning">
+                                    <label for="horaaaaa">11:00</label>
+                                    <input type="radio" name="hora" id="horaaaaa">
+                                </div>
                             </div>
+                        </div>
+
+                        <div class="periodo">
+                            <p style="font-weight: bold;">Tarde</p>
+                            <div class="form-inline text-center">
+                                <div class="btn btn-warning">
+                                    <label for="horra">12:00</label>
+                                    <input type="radio" name="hora" id="horra">
+                                </div>
+                                <div class="btn btn-warning">
+                                    <label for="horrra">13:00</label>
+                                    <input type="radio" name="hora" id="horrra">
+                                </div>
+                                <div class="btn btn-warning">
+                                    <label for="horrrra">14:00</label>
+                                    <input type="radio" name="hora" id="horrrra">
+                                </div>
+                                <div class="btn btn-warning">
+                                    <label for="horrrrra">15:00</label>
+                                    <input type="radio" name="hora" id="horrrrra">
+                                </div>
+                                <div class="btn btn-warning">
+                                    <label for="horrrrrra">16:00</label>
+                                    <input type="radio" name="hora" id="horrrrrra">
+                                </div>
+                                <div class="btn btn-warning">
+                                    <label for="horrrrrra">17:00</label>
+                                    <input type="radio" name="hora" id="horrrrrra">
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    <div class="periodo">
+                        <p style="font-weight: bold;">Noite</p>
+                        <div class="form-inline text-center">
+                            <div class="btn btn-warning">
+                                <label for="hoora">18:00</label>
+                                <input type="radio" name="hora" id="hoora">
+                            </div>
+                            <div class="btn btn-warning">
+                                <label for="hooora">19:00</label>
+                                <input type="radio" name="hora" id="hooora">
+                            </div>
+                            <div class="btn btn-warning">
+                                <label for="hoooora">20:00</label>
+                                <input type="radio" name="hora" id="hoooora">
+                            </div>
+                            <div class="btn btn-warning">
+                                <label for="hooooora">21:00</label>
+                                <input type="radio" name="hora" id="hooooora">
+                            </div>
+                            <div class="btn btn-warning">
+                                <label for="hoooooora">22:00</label>
+                                <input type="radio" name="hora" id="hoooooora">
+                            </div>
+                            
+                        </div>
+                </div>
+                    <br>
+                    <p>Preencha as informações</p>
+
+                    <label for="fnome"> Nome</label>
+                    <br>
+                    <input type="text" class="form-control form-control-sm" name="tipo_nome" size="60" style="width: 100%;" required>
+                    <br><br>
+                    <label for="femail"> E-mail</label>
+                    <br>
+                    <input type="text" class="form-control form-control-sm"  name="tipo_email" size="60" style="width: 100%;" required>
+                    <br><br>
+                    <label for="ftelefone"> Telefone</label>
+                    <br>
+                    <input type="tel" class="form-control form-control-sm" name="tipo_telefone" size="60" style="width: 100%;" required>
+                    <br>
+                    <!-- <div class="form-group">
+                        <label for="modalidade">Modalidade</label>
+                        <select id="modalidade" name="modalidade">
+                            <option value="" disabled selected>Selecione uma modalidade</option>
+                            <option value="beach-tenis">Beach Tênis</option>
+                            <option value="volei">Vôlei</option>
+                        </select>
+                    </div> -->
+                    <div>
+                        <button type="submit" class="btn btn-warning" style="color: #fff;">Confirmar</button>
                     </div>
-                
-            </div>
+                </div>
+            </form>
+
         </div>
-    </main>
+    </div>
 </body>
 </html>
