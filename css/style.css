@@ -10325,6 +10325,14 @@ textarea {
           }
         }
 
+        @media (max-width: 900px) {
+          .fachada {
+            width: 300px;
+            height: 300px;
+            align-items: center;
+          }
+        }
+
         .whats-logo {
           width: 40px;
         }
