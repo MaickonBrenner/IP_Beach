@@ -128,6 +128,22 @@ input[type="text"]:focus {
     filter: brightness(1);
 }
 
+input[type="tel"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    filter: brightness(0.9);
+    font-size: 16px;
+}
+
+input[type="tel"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    filter: brightness(1);
+}
+
 .form-group {
     display: flex;
     flex-direction: column;
