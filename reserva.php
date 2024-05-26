@@ -26,12 +26,19 @@
 
             <div class="card" style="width: 90%; min-width: 300px; max-width: 500px;">
                 <form action="criar_reserva.php" method="post" class="card-body text-center">
-                    <h5 class="card-title"><b>Selecione uma data</b></h5>
+                    <h5 class="card-title"><b>Selecione uma data
+                        <?php 
+                            if (isset($_GET['date']) and $_GET['date'] == 'error-date') { echo '<span style="color: red;font-size: 1rem;"> Data inválida</span>'; }       
+                        ?>
+                    </b></h5>
                     
                     <input name="data" class="form-control" type="date" placeholder="Digite o usuário"  style="width: 100%;" required>
 
                     <div class="info-texto">
-                        <p>Selecione um horário</p>
+                        <p>Selecione um horário 
+                            <?php 
+                                if (isset($_GET['date']) and $_GET['date'] == 'error-date-res') { echo '<span style="color: red;font-size: 1rem;"> Hora já reservada</span>'; }       
+                        ?></p>
                     </div>
 
                     <div class="info-horario form-inline text-center">
@@ -128,15 +135,15 @@
 
                     <label for="fnome"> Nome</label>
                     <br>
-                    <input type="text" class="form-control form-control-sm" name="tipo_nome" size="60" style="width: 100%;" required>
+                    <input value="<?php if(isset($_GET['nome'])) { echo $_GET['nome'];} ?>" type="text" class="form-control form-control-sm" name="tipo_nome" size="60" style="width: 100%;" required>
                     <br><br>
                     <label for="femail"> E-mail</label>
                     <br>
-                    <input type="text" class="form-control form-control-sm"  name="tipo_email" size="60" style="width: 100%;" required>
+                    <input value="<?php if(isset($_GET['email'])) { echo $_GET['email'];} ?>" type="email" class="form-control form-control-sm"  name="tipo_email" size="60" style="width: 100%;" required>
                     <br><br>
                     <label for="ftelefone"> Telefone</label>
                     <br>
-                    <input id="tel" type="tel" class="form-control form-control-sm" name="tipo_telefone" size="60" style="width: 100%;" required>
+                    <input value="<?php if(isset($_GET['telefone'])) { echo $_GET['telefone'];} ?>" id="tel" type="tel" class="form-control form-control-sm" name="tipo_telefone" size="60" style="width: 100%;" required>
                     <br>
                     <!-- <div class="form-group">
                         <label for="modalidade">Modalidade</label>

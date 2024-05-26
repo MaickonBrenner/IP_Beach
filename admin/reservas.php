@@ -105,7 +105,7 @@
                     </div>
                 </div>
 
-                <h2 class="h3">Área de Pesquisa</h2>
+                <!-- <h2 class="h3">Área de Pesquisa</h2>
 
                 <form class="row">
                     <div class="col-lg-2">
@@ -132,7 +132,7 @@
                         <h3 class="h5">Pesquisar</h3>
                         <button type="submit" class="btn btn-primary">Pesquisar</button>
                     </div>
-                    
+                     -->
                 </form>
 
                 <div class="row">
