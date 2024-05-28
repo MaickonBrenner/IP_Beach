@@ -1,10 +1,13 @@
 <?php
-echo "<pre>";
-echo print_r($_POST);
-echo "</pre>"; 
+
+    include("includes/connection.php"); // Conecta ao banco de dados.
+    include("includes/protect.php"); // Conecta ao banco de dados.
+
+    if ($connection->connect_error) {
+        die("Connection failed: " . $connection->connect_error);
+    }  
+    
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,23 +35,34 @@ echo "</pre>";
 </head>
 <body style="display: flex; align-items: center; justify-content: center;">
 
-    <form action="index.php" method="post" class="card" style=" width: 80%; max-width: 500px; background-color: white; padding: 20px; border-radius: 10px;">
+    <form action="reservas.php" method="post" class="card" style=" width: 80%; max-width: 500px; background-color: white; padding: 20px; border-radius: 10px;">
         <h1>Editar reserva</h1>
         <h3>Nome de usuário</h3>
-        <input name="usuario" class="form-control form-control-sm" type="text" placeholder="Digite o usuário" aria-label=".form-control-sm example" style="margin-bottom: 20px;">
+        <?php 
+            $id = $_POST['id'];
+            $query = "SELECT * FROM reserva WHERE IDRESERVA = $id";
+            $result = $connection->query($query);
+            while($row = $result->fetch_assoc()) {
+                $text_nome = $row['NOME'];
+                $texto_email = $row['EMAIL'];
+                $texto_telefone = $row['TELEFONE'];
+                $texto_agendada = $row['DATAAGENDADA'];
+                $text_hora = $row['HORA'];
+            }            
+        echo "<input name='nome' value='$text_nome'  class='form-control form-control-sm' type='text' placeholder='Digite o usuário' aria-label='.form-control-sm example' style='margin-bottom: 20px;' required> "; ?>
         <h3>Email</h3>
-        <input name="email" class="form-control form-control-sm" type="email" placeholder="Digite o email" aria-label=".form-control-sm example" style="margin-bottom: 20px;">
+        <?php echo "<input name='email' value='$texto_email'  class='form-control form-control-sm' type='email' placeholder='Digite o Email' aria-label='.form-control-sm example' style='margin-bottom: 20px;' required> "; ?>
         <h3>telefone</h3>
-        <input name="telefone" class="form-control form-control-sm" type="tel" placeholder="Digite o telefone" aria-label=".form-control-sm example" style="margin-bottom: 20px;">
-        <h3>Data do agendamento</h3>
-        <input name="data" class="form-control form-control-sm" type="date" placeholder="Digite a data do agendamento" aria-label=".form-control-sm example" style="margin-bottom: 20px;">
+        <?php echo "<input name='telefone' value='$texto_telefone'  class='form-control form-control-sm' type='tel' placeholder='Digite o celular' aria-label='.form-control-sm example' style='margin-bottom: 20px;' required> "; ?>
         <h3>Data agendada</h3>
-        <input name="dataagendada" class="form-control form-control-sm" type="date" placeholder="Digite a agendada" aria-label=".form-control-sm example" style="margin-bottom: 20px;">
+        <?php echo "<input name='data' value='$texto_agendada'  class='form-control form-control-sm' type='data' placeholder='Digite a data' aria-label='.form-control-sm example' style='margin-bottom: 20px;' required> "; ?>
         <h3>Hora agendada</h3>
-        <input name="dataagendada" class="form-control form-control-sm" type="text" placeholder="Digite a hora agendada" aria-label=".form-control-sm example" style="margin-bottom: 20px;">
+        <?php echo "<input name='hora' value='$text_hora'  class='form-control form-control-sm' type='text' placeholder='Digite a data' aria-label='.form-control-sm example' style='margin-bottom: 20px;' required> "; ?>
         
-        <button class="btn btn-primary">Entrar</button>
+        <button class="btn btn-primary">Confirmar</button>
+        <a class="btn btn-primary" href="reservas.php">Voltar</a>
     </form>
+            
     <!-- <a href="usuarios.php">cmd</a> -->
 
 </body>

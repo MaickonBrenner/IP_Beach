@@ -69,6 +69,7 @@
         <h3>Senha</h3>
         <input name="senha" class="form-control form-control-sm" type="password" placeholder="Digite a senha" aria-label=".form-control-sm example" style="margin-bottom: 20px;" required>
         <button class="btn btn-primary">Entrar</button>
+        <a href="../index.html" style="margin-top: 20px;">voltar à página</a>
     </form>
     <!-- <a href="usuarios.php">cmd</a> -->
 

@@ -49,7 +49,8 @@
                 $text_senha = $row['SENHA'];
             }
             
-            echo "<input name='nome' value='$text_nome'  class='form-control form-control-sm' type='text' placeholder='Digite o usuário' aria-label='.form-control-sm example' style='margin-bottom: 20px;' required> ";?>
+            echo "<input name='nome' value='$text_nome'  class='form-control form-control-sm' type='text' placeholder='Digite o usuário' aria-label='.form-control-sm example' style='margin-bottom: 20px;' required> ";
+        ?>
         <h3>Senha</h3>
         <?php echo "<input name='senha' value='$text_senha'  class='form-control form-control-sm' type='text' placeholder='Digite o usuário' aria-label='.form-control-sm example' style='margin-bottom: 20px;' required> ";?>
         
